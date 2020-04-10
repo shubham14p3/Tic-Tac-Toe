@@ -12,7 +12,9 @@ class UserInterface
 	def self.ask_player_name(player
 		
 	end
-	
+	def self.repeat_match()
+		
+	end
 	
 end
 
