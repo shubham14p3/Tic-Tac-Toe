@@ -21,7 +21,12 @@ class UserInterface
     gets.chomp
 	end
 	def self.repeat_match()
-		
+		loop do
+			puts 'Play again? (y/n)'
+			input = gets.chomp.downcase
+			return true if input == 'y'
+			return false if input == 'n'
+		  end
 	end
 	def self.output_message(message)
 		
