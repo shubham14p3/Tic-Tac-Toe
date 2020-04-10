@@ -17,7 +17,8 @@ class UserInterface
 		gets.chomp
 	end
 	def self.ask_player_name(player
-		
+		puts "Enter name for player #{player[:id]}"
+    gets.chomp
 	end
 	def self.repeat_match()
 		
