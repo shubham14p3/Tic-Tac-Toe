@@ -37,6 +37,8 @@ end
 # The game asks for players names
 
 player1 = {
+	id: 1,
+  sign: 'O'
 	}
 
 player2 = {
