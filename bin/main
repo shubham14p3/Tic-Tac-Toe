@@ -17,3 +17,9 @@ players = [player1, player2]
 showcase_turns = 9
 
 # The game asks for players names
+
+# If player wins
+# output_message("Congratulations , you win!")
+# If game detected a draw
+# Game informs player if selected move is a draw move
+# UserInterface.output_message('You draw')
