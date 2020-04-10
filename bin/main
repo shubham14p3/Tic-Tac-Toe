@@ -42,6 +42,8 @@ player1 = {
 	}
 
 player2 = {
+	id: 2,
+	sign: 'X'
 	}
 
 # Displaying Board
