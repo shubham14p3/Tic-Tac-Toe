@@ -4,6 +4,8 @@ class UserInterface
 
 end
 
+# The game asks for players names
+
 player1 = {
 	}
 
