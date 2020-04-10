@@ -5,6 +5,11 @@ class UserInterface
 	
 
 	end
+
+	def self.ask_move(player)
+		
+	end
+	
 end
 
 # The game asks for players names
