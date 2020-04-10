@@ -46,9 +46,11 @@ player2 = {
   sign: 'X'
 }
 
+# The game board is defines
 board = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 players = [player1, player2]
 
+# User Interface start calling
 current_player = player1
 puts UserInterface.display_board(board)
 game_on = true
@@ -57,7 +59,7 @@ game_on = true
 player1[:name] = UserInterface.ask_player_name(players[0])
 player2[:name] = UserInterface.ask_player_name(players[1])
 
-# Since there is no game logic implemented, we are making the game break after nine iterations
+# Making the game break after nine iterations
 showcase_turns = 9
 
 # The game will remain active until game_on variable falls to false.
