@@ -51,6 +51,14 @@ player2 = {
 board = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 players = [player1, player2]
 
+current_player = player1
+puts UserInterface.display_board(board)
+game_on = true
+
+# The game asks for players names
+player1[:name] = UserInterface.ask_player_name(players[0])
+player2[:name] = UserInterface.ask_player_name(players[1])
+
 # We are making the game break after nine iterations
 showcase_turns = 9
 
