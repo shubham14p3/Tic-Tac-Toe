@@ -9,6 +9,10 @@ class UserInterface
 	def self.ask_move(player)
 		
 	end
+	def self.ask_player_name(player
+		
+	end
+	
 	
 end
 
