@@ -65,6 +65,22 @@ showcase_turns = 9
 # The game asks for players names
 
 # The game will remain active until game_on variable falls to false.
+while game_on
+	# Game tells which player turn it is
+	UserInterface.ask_move(current_player)
+	# Game decides wether it's a valid move and changes the board accordingly
+	# Game inform player if selected move is valid
+	UserInterface.display_board(board)
+  
+	# Game checks for a draw or a winning move
+	# If it detects a winning move, then the game_on variable turns false and it will end the match
+	# If not the current player switches.
+	current_player = current_player == player1 ? player2 : player1
+  
+	showcase_turns -= 1
+	game_on = false if showcase_turns.zero?
+	break unless game_on
+  end
 
 # If player wins
 # output_message("Congratulations , you win!")
