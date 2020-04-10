@@ -83,7 +83,7 @@ while game_on
   end
 
 # If player wins
-# output_message("Congratulations , you win!")
+UserInterface.output_message("Congratulations #{current_player[:name]}, you win!")
 # If game detected a draw
 # Game informs player if selected move is a draw move
 # UserInterface.output_message('You draw')
