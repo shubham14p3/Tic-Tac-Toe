@@ -22,6 +22,8 @@ showcase_turns = 9
 
 # The game asks for players names
 
+# The game will remain active until game_on variable falls to false.
+
 # If player wins
 # output_message("Congratulations , you win!")
 # If game detected a draw
