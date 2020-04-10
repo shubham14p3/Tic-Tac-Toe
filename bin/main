@@ -1,7 +1,10 @@
 #!/usr/bin/env ruby
 
 class UserInterface
+	def self.display_board(board)
+	
 
+	end
 end
 
 # The game asks for players names
