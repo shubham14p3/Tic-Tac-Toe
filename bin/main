@@ -15,6 +15,9 @@ class UserInterface
 	def self.repeat_match()
 		
 	end
+	def self.output_message(message)
+		
+	end
 	
 end
 
