@@ -29,7 +29,7 @@ class UserInterface
 		  end
 	end
 	def self.output_message(message)
-		
+		puts message
 	end
 	
 end
