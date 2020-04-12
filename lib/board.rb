@@ -107,5 +107,7 @@ class Board
     false
   end
 
-  
+  def display
+    @user_interface.display_board(@cells)
+  end
 end
