@@ -10,7 +10,14 @@ class Board
 
   private
 
-  
+  def check_win_rows?(player)
+    symbol_check = player.character
+    @cells.each do |row|
+      return true if row.all?(symbol_check)
+    end
+    false
+  end
+
   def check_win_columns?(player)
     symbol_check = player.character
     i = 0
