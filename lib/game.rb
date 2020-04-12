@@ -1,6 +1,7 @@
 class Game
  def initialize(user_interface)
-   
+	@game_on = false
+	@user_interface = user_interfac
   end
 
   def start
