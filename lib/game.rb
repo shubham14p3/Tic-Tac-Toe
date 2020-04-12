@@ -1,9 +1,13 @@
+require_relative 'player.rb'
+require_relative 'board.rb'
+require_relative 'match.rb'
+
 class Game
-	def initialize(user_interface)
-		@game_on = false
-		@user_interface = user_interfac
-	end
-	
+  def initialize(user_interface)
+    @game_on = false
+    @user_interface = user_interfac
+  end
+
   def start
     @user_interface.output_message 'Welcome to Tic-Tac-Toe!'
     @players = []
