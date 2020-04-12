@@ -5,7 +5,7 @@ require_relative 'match.rb'
 class Game
   def initialize(user_interface)
     @game_on = false
-    @user_interface = user_interfac
+    @user_interface = user_interface
   end
 
   def start
