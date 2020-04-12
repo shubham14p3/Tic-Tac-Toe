@@ -1,3 +1,6 @@
+require_relative 'player.rb'
+require_relative 'board.rb'
+
 class Match
   def initialize(players, user_interface)
     @players = players
