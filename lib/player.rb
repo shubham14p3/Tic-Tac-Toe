@@ -3,8 +3,8 @@ class Player
   attr_writer :score
 
   def initialize(id, character)
-	@id = id
-	@score = 0
-	@character = character
+    @id = id
+    @score = 0
+    @character = character
   end
 end
