@@ -7,9 +7,9 @@ class Board
     @cells = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     @user_interface = user_interface
   end
-
-  private
   
+  private
+
   def valid_move?(position)
     position.positive? && (position <= @cells.length**2) && position.is_a?(Integer)
   end
