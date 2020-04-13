@@ -30,6 +30,7 @@ class UserInterface
   end
 
   def repeat_match()
+	system 'clear'
     loop do
       puts 'Play again? (y/n)'
       input = gets.chomp.downcase
