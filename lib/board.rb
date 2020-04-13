@@ -10,6 +10,10 @@ class Board
 
   private
 
+  def valid_move?(position)
+    position.positive? && (position <= @cells.length**2) && position.is_a?(Integer)
+  end
+
   def check_win_rows?(player)
     symbol_check = player.character
     @cells.each do |row|
@@ -88,10 +92,6 @@ class Board
     return 2 if board_full?
 
     0
-  end
-
-  def valid_move?(position)
-    position.positive? && (position <= @cells.length**2) && position.is_a?(Integer)
   end
 
   def apply_move?(char, position)
