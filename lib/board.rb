@@ -9,6 +9,10 @@ class Board
   end
 
   private
+  
+  def valid_move?(position)
+    position.positive? && (position <= @cells.length**2) && position.is_a?(Integer)
+  end
 
   def check_win_rows?(player)
     symbol_check = player.character
@@ -81,17 +85,11 @@ class Board
   public
 
   def board_completed(player)
-    return 1 if check_win_rows?(player) || check_win_columns?(player)
-
-    return 1 if check_win_main_diagonal?(player) || check_win_reverse_diagonal?(player)
+    return 1 if (check_win_rows?(player) || check_win_columns?(player)) || (check_win_main_diagonal?(player) || check_win_reverse_diagonal?(player))
 
     return 2 if board_full?
 
     0
-  end
-
-  def valid_move?(position)
-    position.positive? && (position <= @cells.length**2) && position.is_a?(Integer)
   end
 
   def apply_move?(char, position)
