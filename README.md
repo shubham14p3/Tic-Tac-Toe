@@ -12,9 +12,9 @@ Tic-Tac-Toe is an fun game to play. This game is made on ruby an OOP program. Th
 
 4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.
 
-Top-Left		Top-Center		Top-Right
-Middle-Left		Middle-Center	Middle-Right
-Bottom-Left		Bottom-Center	Bottom-Right
+Top-Left		 Top-Center		 Top-Right
+Middle-Left		 Middle-Center	 Middle-Right
+Bottom-Left		 Bottom-Center	 Bottom-Right
 					
 # How to play
 
