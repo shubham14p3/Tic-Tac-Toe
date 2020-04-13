@@ -85,7 +85,7 @@ class Board
   public
 
   def board_completed(player)
-    return 1 if (check_win_rows?(player) || check_win_columns?(player))
+    return 1 if check_win_rows?(player) || check_win_columns?(player)
 
     return 1 if check_win_main_diagonal?(player) || check_win_reverse_diagonal?(player)
 

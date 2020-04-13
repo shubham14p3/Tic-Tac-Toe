@@ -14,8 +14,15 @@ class UserInterface
   end
 
   def ask_name(idx)
-    puts "Enter name for player #{idx}"
-    gets.chomp
+	name = nil
+    loop do
+      puts "Enter name for player #{idx}"
+      name = gets.chomp
+      break if name.length.positive?
+
+      puts 'Please enter a valid name of at least one character.'
+    end
+	name
   end
 
   def ask_move(player)
