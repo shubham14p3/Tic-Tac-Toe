@@ -3,4 +3,8 @@ describe Board do
     Player.new(1, 'X')
   end
 
+  let(:my_ui) do
+    UserInterface.new
+  end
+ 
 end
