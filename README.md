@@ -45,6 +45,7 @@ Once you have the files on your computer, go on the command line and navigate to
 
 # Live version
 
+
 [Link to the live version](https://tic-tac-toe.shubham14p3.repl.run/)
 
 # Requirements
