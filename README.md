@@ -43,6 +43,10 @@ Once you have the files on your computer, go on the command line and navigate to
 - Run the game directly from the executable file, using the command `./bin/main.rb`
 - Pass the main.rb file to the ruby interpreter, using the command `ruby bin/main.rb`
 
+Also for testing with Rspec there's two ways to do so (Remeber to install rspec)
+
+- Run the command `rspec .` or  `rspec bin/board_spec.rb`
+
 # Live version
 
 
