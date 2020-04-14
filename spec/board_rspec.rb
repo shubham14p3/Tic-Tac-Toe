@@ -1,6 +1,6 @@
 require './lib/board'
+require './lib/player'
 require './bin/main'
-require './bin/player'
 
 describe Board do
   let(:my_player) do
