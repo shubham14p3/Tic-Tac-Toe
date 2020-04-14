@@ -70,4 +70,18 @@ describe Board do
     end
   end
 
+  describe '#valid_move?' do
+    it 'should return true if it is a valid move' do
+      expect(my_board.valid_move?(1)).to eql(true)
+    end
+
+    it 'should return false if the move is out of boundaries' do
+      expect(my_board.valid_move?(10)).not_to eql(true)
+    end
+
+    it 'should return false if the position is already taken' do
+      my_board.apply_move?(my_player.character, 1)
+      expect(my_board.apply_move?(my_player.character, 1)).not_to eql(true)
+    end
+  end
 end
