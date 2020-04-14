@@ -14,15 +14,15 @@ class UserInterface
   end
 
   def ask_name(idx)
-	name = nil
+    name = nil
     loop do
-      puts "Enter name for player #{idx}"
+      puts "Enter the name for player #{idx}"
       name = gets.chomp
       break if name.length.positive?
 
       puts 'Please enter a valid name of at least one character.'
     end
-	name
+    name
   end
 
   def ask_move(player)
@@ -37,7 +37,6 @@ class UserInterface
   end
 
   def repeat_match()
-	system 'clear'
     loop do
       puts 'Play again? (y/n)'
       input = gets.chomp.downcase
@@ -51,6 +50,8 @@ class UserInterface
   end
 end
 
-ui = UserInterface.new
-game = Game.new(ui)
-game.start
+if $PROGRAM_NAME == __FILE__
+  ui = UserInterface.new
+  game = Game.new(ui)
+  game.start
+end
