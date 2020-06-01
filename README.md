@@ -1,4 +1,4 @@
-# Tic-Tac-Toe-on-Ruby
+# Tic-Tac-Toe-Ruby
 
 Tic-Tac-Toe is an fun game to play. This game is made on ruby an OOP program. The tic-tac-toe game is created to play on the command line where two human players can play against each other and the board is displayed in between turns 
 
